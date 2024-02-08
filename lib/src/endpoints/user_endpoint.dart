@@ -51,7 +51,7 @@ class UserEndpoint extends Endpoint {
   }
 
   Future<Map<String, dynamic>> delete(Session session, int id) async {
-    var res = {};
+    Map<String, dynamic> res = {};
 
     var isExist = await User.db.findById(session, id);
 
@@ -63,10 +63,10 @@ class UserEndpoint extends Endpoint {
         },
       );
 
-      return {
-        'statusCode': 200,
-        'deleted': deletedUser,
-      };
+      res['statusCode'] = 200;
+      res['deleted'] = deletedUser;
+
+      return res;
     }
 
     return {

@@ -1,5 +1,8 @@
 example:
   - hello:
+posts:
+  - createPost:
+  - readAllPosts:
 user:
   - create:
   - read:

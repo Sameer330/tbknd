@@ -1,0 +1,5 @@
+class: Post
+table: posts
+fields:
+  userId: int, relation(parent=users)
+  text: String

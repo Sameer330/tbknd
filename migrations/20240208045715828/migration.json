@@ -1,0 +1,18 @@
+{
+  "actions": [
+    {
+      "type": "deleteTable",
+      "deleteTable": "posts"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "tableDropped",
+      "message": "Table \"posts\" will be dropped.",
+      "table": "posts",
+      "columns": [],
+      "destrucive": true
+    }
+  ],
+  "migrationApiVersion": 1
+}
